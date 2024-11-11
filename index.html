@@ -12,9 +12,14 @@
     <input type="text" id="inputLink" placeholder="Ingresá la URL o link">
     <!-- Botón que ejecuta la función generateQRCode() para generar el código QR al hacer clic. -->
     <button onclick="generateQRCode()">Generar código QR</button>
-
+    <!--  -->
+    <!--  Contenedor que muestra el código QR, inicialmente oculto. -->
+    <div id="qrcode-container" style="display: none;">
+        <!-- Imagen donde se muestra el código QR generado. -->
+        <img id="qrcode" alt="QR Code">
+        </div>
+        <!-- Botón que permite descargar el código QR como imagen al hacer clic, y ejecuta la función downloadQRCode(). -->
+        <button id="downloadBtn" onclick="downloadQRCode()">Descargá tu código</button>
 
 </body>
 </html>
-
-    <!--  -->
