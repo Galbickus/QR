@@ -15,11 +15,27 @@
     <!--  -->
     <!--  Contenedor que muestra el código QR, inicialmente oculto. -->
     <div id="qrcode-container" style="display: none;">
-        <!-- Imagen donde se muestra el código QR generado. -->
-        <img id="qrcode" alt="QR Code">
-        </div>
-        <!-- Botón que permite descargar el código QR como imagen al hacer clic, y ejecuta la función downloadQRCode(). -->
-        <button id="downloadBtn" onclick="downloadQRCode()">Descargá tu código</button>
-
+    <!-- Imagen donde se muestra el código QR generado. -->
+    <img id="qrcode" alt="QR Code">
+    </div>
+    <!-- Botón que permite descargar el código QR como imagen al hacer clic, y ejecuta la función downloadQRCode(). -->
+    <button id="downloadBtn" onclick="downloadQRCode()">Descargá tu código</button>
+    <!-- importación de bibliotecas de funciones JS -->
+    <!--biblioteca qrious que permite generar códigos QR.-->
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <!-- Contiene las funciones JavaScript-->
+    <script>
+        // Función que obtiene el enlace del campo de texto (inputLink) y crea un código QR con el valor del enlace ingresado. Luego, muestra el contenedor del código QR (qrcode-container) y el botón de descarga (downloadBtn).
+        function generateQRCode() {
+            const inputLink = document.getElementById('inputLink').value;
+            const qrcodeContainer = document.getElementById('qrcode-container');
+            const qrcode = new QRious({
+                element: document.getElementById('qrcode'),
+                value: inputLink,
+                size: 300
+    });
+    
+        }
+        </script>
 </body>
 </html>
