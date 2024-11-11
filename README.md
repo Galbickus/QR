@@ -1,7 +1,6 @@
 # Generador de Códigos QR | Galbickus 💜
 
-
-![cap](https://github.com/user-attachments/assets/7f30e8b2-af4f-4561-95dc-ec2e8697f174)
+![cap](https://github.com/user-attachments/assets/c50e01b2-607d-43a3-9629-8e8ce2685305)
 
 
 Este proyecto es una aplicación web simple para generar y descargar códigos QR a partir de un enlace proporcionado por el usuario. Fue desarrollado con HTML, CSS y JavaScript y utiliza la biblioteca `qrious` para crear los códigos QR.
