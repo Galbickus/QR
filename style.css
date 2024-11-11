@@ -1,0 +1,119 @@
+/*body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+    background: #cd00ff;
+background: linear-gradient(243deg,#cd00ff 0%, #16031b 80%);
+background: -webkit-linear-gradient(243deg,#cd00ff 0%, #16031b 80%);
+background: -moz-linear-gradient(243deg,#cd00ff 0%, #16031b 80%);
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+input {
+    width: 50rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    margin-top: 1rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#qrcode-container {
+    display: none;
+}
+    */
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(243deg, #cd00ff 0%, #16031b 80%);
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Input */
+input {
+    width: 40rem;
+    max-width: 80%;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+    width: 16rem;
+    max-width: 80%;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #5b01a1;
+}
+
+button:hover {
+    background-color: #7202cf;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+    background-color: #4a0181;
+}
+
+/* QR Code Container */
+#qrcode-container {
+    display: none;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* QR Code Image */
+img {
+    margin: 2rem 0;
+    border: 3px solid #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
